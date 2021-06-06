@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta HTTP-EQUIV="refresh" CONTENT="600000">
+    <title>2-5시간표</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <script language="javascript">
+function time(){
+var time= new Date();
+    document.getElementById("now").innerHTML=time.getHours()+"시"+time.getMinutes()+"분"+time.getSeconds()+"초";
+   setInterval("time()",1000);
+}
+function notify() {
+  if (Notification.permission !== "denied") {
+    Notification.requestPermission(permission => {
+      if (permission === "granted") {
+        const option = { body: "수업 들어가 !" };
+        new Notification("2-5 수업알리미", option);
+      } else {
+        alert('Notification denied');
+      }
+    });
+  }
+}
+// new Notification("수업 2분전 !");
+
+
+
+var audio = new Audio('alarm.mp3')
+
+var today = new Date();
+
+var yyyy = today.getFullYear().toString();
+
+var mm = today.getMonth().toString();
+
+var dd = today.getDate().toString();
+
+/* 9시30분 부터 18시까지만 toDO실행 */
+
+var startDate = new Date(yyyy,mm,dd,09,00,0);
+
+var endDate = new Date(yyyy,mm,dd,09,12,0);
+
+if (today <= endDate && today >= startDate) { notify(); audio.play(); }
+
+
+var startDate = new Date(yyyy,mm,dd,20,00,0);
+
+var endDate = new Date(yyyy,mm,dd,21,12,0);
+
+if (today <= endDate && today >= startDate) { notify(); audio.play(); }
+
+
+    </script>
+
+    <style>
+
+
+h3{text-align: center;
+
+}
+h1{
+  font-size: 60px;
+}
+body {
+  font-family: "jua";
+  font-size: 28px;
+}
+
+    .saw {
+      position:absolute;
+      left:57%;
+      top:107px;
+    }
+    .cow {position:absolute;
+    left:35%;
+  top:108px;}
+</style>
+<style type="text/css">
+a:link {text-decoration: none; color:  #000000;}
+a:visited {text-decoration: none; color: #000000;}
+</style>
+
+
+  </head>
+  
+
+  <body onload="time()">
+    <h3>현재 시간:<span id="now"></span></h3>
+<h1 style="vertical-align:top; text-align:center;"><a href="https://band.us/band/83239095"target="_blank">2-5<a></h1><br>
+  <image src="https://cdn.discordapp.com/attachments/739463853196312578/794164960187383808/1609414071789.png "width="90"class="cow" onclick="document.querySelector('body').style.background='#1C1C1C';
+  document.querySelector('body').style.color='white'
+  ">
+<a href="https://cafe.naver.com/2020hbhigh"class="saw"target="_blank"title="한백고">
+  <image src="https://discord.com/assets/8359db312f7319a4b0b23415e5fd1392.svg"width="90">
+  <a>
+  <table border ="0"align="center"bordercolor="white">
+<th><a href="https://hcs.eduro.go.kr/#/main"target="_blank">TIME TABLE</a></th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+<tr>
+  <td><strong>9:10-10:00</strong></td>
+  <td><a href="https://han.gl/jeV2T"target="_blank">수학</a></td>
+  <td><a href="https://han.gl/jeV2T"target="_blank">수학</a></td>
+  <td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a></td>
+<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">진로</a></td>
+<td><a href="https://zoom.us/j/7820877514?pwd=eWhacitibUtTZXFzMGpkaW9QT3hnQT09"targer="_blank">확통<a></td>
+</tr>
+
+<tr>
+  <td><strong>10:10-11:00</strong></td>
+  <td><a href="https://us02web.zoom.us/j/3345477232?pwd=WnY1THRBU2xhdDIySkN3UXpDRW0vUT09"target="_blank">화학</a></td>
+  <td><a href="https://zoom.us/j/5891163504?pwd=NnUwRFlrbE9DaGYxODl4TzlvSTZFUT09"target="_blank">운동</a></td>
+  <td><a href="https://zoom.us/j/5891163504?pwd=NnUwRFlrbE9DaGYxODl4TzlvSTZFUT09"target="_blank">운동</a></td>
+  <td><a href="https://us02web.zoom.us/j/3345477232?pwd=WnY1THRBU2xhdDIySkN3UXpDRW0vUT09"target="_blank">화학</a></td>
+  <td><a href="https://us02web.zoom.us/j/3595077333?pwd=RFlmRytBeXZnbHZkbHkwcGFaMEgvUT09"target="_blank">생명</a></td>
+</tr>
+<td><strong>11:10-12:00</strong></td>
+<td><a href="https://zoom.us/j/7820877514?pwd=eWhacitibUtTZXFzMGpkaW9QT3hnQT09"target="_blank">확통</a></td>
+<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">영어</a></td>
+<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">영어</a></td>
+<td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a></td>
+<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">영어</a></td>
+</tr>
+
+<tr>
+  <td><strong>12:50-13:40</strong></td>
+  <td><a href="https://zoom.us/j/8692163204?pwd=T2hxdE5NTktnRGppWmlxMy9MTEp4Zz09"target="_blank">중국</a></td>
+  <td><a href="https://zoom.us/j/2570307406?pwd=c01nRkowNXV4WWlCQUdRUDNsY0Y0Zz09#success"target="_blank">물리</a></td>
+  <td><a href="https://us02web.zoom.us/j/3345477232?pwd=WnY1THRBU2xhdDIySkN3UXpDRW0vUT09"target="_blank">화학</a></td>
+  <td><a href="https://han.gl/jeV2T"target="_blank">수학</td>
+    <td><a href="https://han.gl/jeV2T"target="_blank">수학</a></td>
+</tr>
+
+<tr>
+  <td><strong>13:50-14:40</strong></td>
+  <td><A href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a>  </td>
+  <td><a href="https://zoom.us/j/8692163204?pwd=T2hxdE5NTktnRGppWmlxMy9MTEp4Zz09"target="_blank">중국</a></td>
+  <td>창체</td>
+  <td><a href="https://zoom.us/j/2570307406?pwd=c01nRkowNXV4WWlCQUdRUDNsY0Y0Zz09#success"target="_blank">물리</a></td>
+  <td><a href="https://zoom.us/j/8692163204?pwd=T2hxdE5NTktnRGppWmlxMy9MTEp4Zz09"target="_blank">중국</a></td>
+</tr>
+
+<tr>
+  <td><strong>14:50-15:40</strong></td>
+  <td><a href="https://us02web.zoom.us/j/3595077333?pwd=RFlmRytBeXZnbHZkbHkwcGFaMEgvUT09"target="_blank">생명</a></td>
+  <td><a href="https://us02web.zoom.us/j/3595077333?pwd=RFlmRytBeXZnbHZkbHkwcGFaMEgvUT09"target="_blank">생명</a></td>
+  <td>창체</td>
+  <td><a href="https://zoom.us/j/97294926621?pwd=dnR1cW9SWG9QZWN3MXIyQXB4bnI2UT09"target="_blank">미술</a></td>
+  <td><a href="https://zoom.us/j/2570307406?pwd=c01nRkowNXV4WWlCQUdRUDNsY0Y0Zz09#success"target="_blank">물리</a></td>
+</tr>
+<tr>
+  <td><strong>15:50-16:40</strong></td>
+<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09
+"target="_blank">영어</a></td>
+<td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a></td>
+<td></td>
+<td><a href="https://zoom.us/j/97294926621?pwd=dnR1cW9SWG9QZWN3MXIyQXB4bnI2UT09"target="_blank">미술</a></td>
+<td></td>
+  </table>
+  </body>
+</html>
