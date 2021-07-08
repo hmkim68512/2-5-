@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta HTTP-EQUIV="refresh" CONTENT="5000">
+    <meta HTTP-EQUIV="refresh" CONTENT="120000"> 
     <title>2-5시간표</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -10,8 +10,9 @@
 function time(){
 var time= new Date();
     document.getElementById("now").innerHTML=time.getHours()+"시"+time.getMinutes()+"분"+time.getSeconds()+"초";
-   setInterval("time()",120000);
-   //setInterval 1000 = 1초 
+
+   setInterval("time()",1000);
+    
 
 }
 function notify() {
