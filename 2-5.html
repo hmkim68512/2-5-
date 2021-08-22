@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta HTTP-EQUIV="refresh" CONTENT="120000"> 
+    <meta HTTP-EQUIV="refresh" CONTENT="60000"> 
     <title>2-5시간표</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -12,8 +12,8 @@ var time= new Date();
     document.getElementById("now").innerHTML=time.getHours()+"시"+time.getMinutes()+"분"+time.getSeconds()+"초";
 
    setInterval("time()",1000);
-    
 
+    
 }
 function notify() {
   if (Notification.permission !== "denied") {
@@ -91,9 +91,23 @@ var endDate = new Date(yyyy,mm,dd,15,55,0);
 
 if (today <= endDate && today >= startDate) { notify(); audio.play(); } 
 
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "400px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
  </script>
 
     <style>
+
+
+      
 
 
 h3{text-align: center;
@@ -107,18 +121,107 @@ body {
   font-size: 28px;
 }
 
-    .saw {
+    .bd {
       position:absolute;
-      left:57%;
-      top:107px;
+      left:79%;
+      top:162px;
+      opacity : 0.7
     }
     .cow {position:absolute;
-    left:35%;
-  top:108px;}
+    left:90%;
+  top:160px;}
+.jp { position: absolute;
+right: 23.5%; top: 20%
+}
+.gg{ position: absolute;
+right: 27%; top: 20%
+}
+.jg {position:absolute;
+    left:90.1%;
+  top:120px;}
+.cf
+{position:absolute;
+    left:69%;
+  top:160px;
+  opacity : 0.7}
+.bdd
+ {position:absolute;
+    left:80.5%;
+  top:120px;}
+.cff
+{position:absolute;
+    left:70.5%;
+  top:120px;}
+.rr
+
+{ position:absolute;
+      left:68.45%;
+      top:300px;
+      opacity : 0.7
+    }
+
+
+
+
+.rrr
+
+{position:absolute;
+    left:69.4%;
+  top:270px;}
+
+
+
+ul ul {display:none;}
+ul li:hover > ul {display:block;}
 </style>
 <style type="text/css">
 a:link {text-decoration: none; color:  #000000;}
 a:visited {text-decoration: none; color: #000000;}
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity:0.92;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 </style>
 
 
@@ -126,75 +229,111 @@ a:visited {text-decoration: none; color: #000000;}
 
 
   <body onload="time()">
-    <h3>현재 시간:<span id="now"></span></h3>
-<h1 style="vertical-align:top; text-align:center;"><a href="https://band.us/band/83239095"target="_blank">2-5<a></h1><br>
-  <image src="https://cdn.discordapp.com/attachments/739463853196312578/794164960187383808/1609414071789.png "width="90"class="cow" onclick="document.querySelector('body').style.background='#1C1C1C';
-  document.querySelector('body').style.color='white'
-  ">
-<a href="https://cafe.naver.com/2020hbhigh"class="saw"target="_blank"title="한백고">
-  <image src="https://discord.com/assets/8359db312f7319a4b0b23415e5fd1392.svg"width="90">
-  <a>
-  <table border ="0"align="center"bordercolor="white">
-<th><a href="https://hcs.eduro.go.kr/#/main"target="_blank">TIME TABLE</a></th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
-<tr>
-  <td><strong>9:10-10:00</strong></td>
-  <td><a href="https://han.gl/jeV2T"target="_blank">수학</a></td>
-  <td><a href="https://han.gl/jeV2T"target="_blank">수학</a></td>
-  <td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a></td>
-<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">진로</a></td>
-<td><a href="https://zoom.us/j/7820877514?pwd=eWhacitibUtTZXFzMGpkaW9QT3hnQT09"targer="_blank">확통<a></td>
-</tr>
+    <h3>현재 시간 : <span id="now"></span></h3>
 
+
+
+
+
+    
+    <div class = "jg">자가진단</div>
+<h1 style="vertical-align:top; text-align:center;">2-5<a></h1><br>
+  <a href="https://hcs.eduro.go.kr/#/main"target="_blank"> <image src="https://play-lh.googleusercontent.com/cKIPifwuWHrwrYg2A-fTj2hzQypTfVXFU4SYGZzvx-nGvCpJTDNkrlUfuGCNZwlAXA"width="100"class="cow">
+  </a>
+  <div class = "bdd">밴드</div>
+<a href="https://band.us/band/83239095 "class="bd"target="_blank"title="한백고">  
+  <image src="https://kmug.co.kr/data/file/design/1846518806_vSxJq5Lf_cd08a39d7c4213379163d5197b3bcb5afd4f29c3.jpg"width="100"></a>
+
+    <div class = "cff">카페</div>
+ <a href="https://cafe.naver.com/2020hbhigh"target="_blank"class="cf">
+<image src="https://cdn.discordapp.com/attachments/875729971711184908/878656690793357332/Remini20210822000718579.jpg"width = "100"></a>
+
+  <div class = "rrr">리로스쿨</div>
+  <a href="https://hanbaek.riroschool.kr/"target="_blank"class="rr">
+ <image src="https://cdn.discordapp.com/attachments/875729971711184908/878653699344437318/icon.png"width = "118"></a>
+
+  <div></div>
+  <table border = "-30" align="center"bordercolor="white">
+<th>TIME TABLE</a></th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+<tr>
+  <td><strong>09:10-10:00</strong></td>
+  <td><a href="https://zoom.us/j/5891163504?pwd=NnUwRFlrbE9DaGYxODl4TzlvSTZFUT09"target="_blank">운동</a></td>
+  <td><a href="https://us02web.zoom.us/j/6371041685?pwd=L2MwMlVjWERBZXkrNXNNbGR1M1BUQT0"target="_blank">수학</a></td>
+  <td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09%20%20"target="_blank">영어</a></td>
+  <td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">독서</a></td>
+  <td><a href="https://zoom.us/j/7830877514?pwd=eWhacitibUtTZXFzMGpkaW9QT3hnQT09"target="_blank">확통<a></td>
+</tr>
 <tr>
   <td><strong>10:10-11:00</strong></td>
-  <td><a href="https://us02web.zoom.us/j/3345477232?pwd=WnY1THRBU2xhdDIySkN3UXpDRW0vUT09"target="_blank">화학</a></td>
+  <td><div onclick="openNav()">일.중</div></a></td>
+  <td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">독서</a></td>
+  <td><div onclick="openNav()">과C</div></td>
   <td><a href="https://zoom.us/j/5891163504?pwd=NnUwRFlrbE9DaGYxODl4TzlvSTZFUT09"target="_blank">운동</a></td>
-  <td><a href="https://zoom.us/j/5891163504?pwd=NnUwRFlrbE9DaGYxODl4TzlvSTZFUT09"target="_blank">운동</a></td>
-  <td><a href="https://us02web.zoom.us/j/3345477232?pwd=WnY1THRBU2xhdDIySkN3UXpDRW0vUT09"target="_blank">화학</a></td>
-  <td><a href="https://us02web.zoom.us/j/3595077333?pwd=RFlmRytBeXZnbHZkbHkwcGFaMEgvUT09"target="_blank">생명</a></td>
+  <td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09  "target="_blank">진로</a></td>
 </tr>
 <td><strong>11:10-12:00</strong></td>
-<td><a href="https://zoom.us/j/7820877514?pwd=eWhacitibUtTZXFzMGpkaW9QT3hnQT09"target="_blank">확통</a></td>
-<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">영어</a></td>
-<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">영어</a></td>
-<td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a></td>
-<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09"target="_blank">영어</a></td>
+<td><div onclick="openNav()">과B</div></td>
+<td><div onclick="openNav()">과A</div></td>
+<td><a href="https://zoom.us/j/97294926621?pwd=dnR1cW9SWG9QZWN3MXIyQXB4bnI2UT09"target="_blank">미술</a></td>
+<td><div onclick="openNav()">일.중</div></a></td>
+<td><div onclick="openNav()">일.중</div></a></td>
 </tr>
 
 <tr>
   <td><strong>12:50-13:40</strong></td>
-  <td><a href="https://zoom.us/j/8692163204?pwd=T2hxdE5NTktnRGppWmlxMy9MTEp4Zz09"target="_blank">중국</a></td>
-  <td><a href="https://zoom.us/j/2570307406?pwd=c01nRkowNXV4WWlCQUdRUDNsY0Y0Zz09#success"target="_blank">물리</a></td>
-  <td><a href="https://us02web.zoom.us/j/3345477232?pwd=WnY1THRBU2xhdDIySkN3UXpDRW0vUT09"target="_blank">화학</a></td>
-  <td><a href="https://han.gl/jeV2T"target="_blank">수학</td>
-    <td><a href="https://han.gl/jeV2T"target="_blank">수학</a></td>
+  <td><div onclick="openNav()">과A</div></td>
+  <td><div onclick="openNav()">과C</div></td>
+  <td><a href="https://zoom.us/j/97294926621?pwd=dnR1cW9SWG9QZWN3MXIyQXB4bnI2UT09"target="_blank">미술</a></td>
+  <td><div onclick="openNav()">과C</div></td>
+  <td><div onclick="openNav()">과B</div></td>
 </tr>
 
 <tr>
   <td><strong>13:50-14:40</strong></td>
-  <td><A href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a>  </td>
-  <td><a href="https://zoom.us/j/8692163204?pwd=T2hxdE5NTktnRGppWmlxMy9MTEp4Zz09"target="_blank">중국</a></td>
+  <td><A href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">독서</a></td>
+  <td><a href="https://zoom.us/j/7820877514?pwd=eWhacitibUtTZXFzMGpkaW9QT3hnQT09"target="_blank">확통</a></td>
   <td>창체</td>
-  <td><a href="https://zoom.us/j/2570307406?pwd=c01nRkowNXV4WWlCQUdRUDNsY0Y0Zz09#success"target="_blank">물리</a></td>
-  <td><a href="https://zoom.us/j/8692163204?pwd=T2hxdE5NTktnRGppWmlxMy9MTEp4Zz09"target="_blank">중국</a></td>
+  <td><a href="https://us02web.zoom.us/j/6371041685?pwd=L2MwMlVjWERBZXkrNXNNbGR1M1BUQT0"target="_blank">수학</a></td>
+  <td><a href="https://us02web.zoom.us/j/6371041685?pwd=L2MwMlVjWERBZXkrNXNNbGR1M1BUQT0"target="_blank">수학</a></td>
 </tr>
 
 <tr>
   <td><strong>14:50-15:40</strong></td>
-  <td><a href="https://us02web.zoom.us/j/3595077333?pwd=RFlmRytBeXZnbHZkbHkwcGFaMEgvUT09"target="_blank">생명</a></td>
-  <td><a href="https://us02web.zoom.us/j/3595077333?pwd=RFlmRytBeXZnbHZkbHkwcGFaMEgvUT09"target="_blank">생명</a></td>
+  <td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09%20%20"target="_blank">영어</a></td>
+  <td><div onclick="openNav()">과B</div></td>
   <td>창체</td>
-  <td><a href="https://zoom.us/j/97294926621?pwd=dnR1cW9SWG9QZWN3MXIyQXB4bnI2UT09"target="_blank">미술</a></td>
-  <td><a href="https://zoom.us/j/2570307406?pwd=c01nRkowNXV4WWlCQUdRUDNsY0Y0Zz09#success"target="_blank">물리</a></td>
+  <td><div onclick="openNav()">과A</div></td>
+  <td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">독서</a></td>
 </tr>
 <tr>
   <td><strong>15:50-16:40</strong></td>
-<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09
-"target="_blank">영어</a></td>
-<td><a href="https://us02web.zoom.us/j/4996223703?pwd=bWREMGEyZkw4elVwRXVJZVo3VzV6QT09"target="_blank">문학</a></td>
+<td><a href="https://us02web.zoom.us/j/6371041685?pwd=L2MwMlVjWERBZXkrNXNNbGR1M1BUQT0"target="_blank">수학</a></td>
+<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09%20%20"target="_blank">영어</a></td>
 <td></td>
-<td><a href="https://zoom.us/j/97294926621?pwd=dnR1cW9SWG9QZWN3MXIyQXB4bnI2UT09"target="_blank">미술</a></td>
+<td><a href="https://zoom.us/j/2675832379?pwd=alc4RnJKNmpvd20zOUlBOUtoeGxUQT09%20%20"target="_blank">영어</a></td>
 <td></td>
   </table>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://zoom.us/j/2570307406?pwd=c01nRkowNXV4WWlCQUdRUDNsY0Y0Zz09">물리</a>
+    <a href="https://us02web.zoom.us/j/3345477232?pwd=WnY1THRBU2xhdDIySkN3UXpDRW0vUT09">화학</a>
+    <a href="https://us02web.zoom.us/j/3595077333?pwd=RFlmRytBeXZnbHZkbHkwcGFaMEgvUT09">생명</a>
+    <a href="https://zoom.us/j/2421928652?pwd=UC85ckxDc0JtYUpScUFaRFIyZlNPUT09#success">지구</a>
+
+    <p>
+      <p>
+    <p>
+      <a href= "https://us02web.zoom.us/j/4209609246?pwd=OGNYS1ZsQmxONHQ4bWZBakkrc09odz09#success">일본어</a>
+      <a href= "https://zoom.us/j/8692163204?pwd=T2hxdE5NTktnRGppWmlxMy9MTEp4Zz09">중국어</a>
+    
+
+
+
+  </div>
+  
+  
+  
   </body>
 </html>
