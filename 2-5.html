@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta HTTP-EQUIV="refresh" CONTENT="120"> 
+    <meta HTTP-EQUIV="refresh" CONTENT="30"> 
     <title>2-5시간표</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -19,8 +19,8 @@ function notify() {
   if (Notification.permission !== "denied") {
     Notification.requestPermission(permission => {
       if (permission === "granted") {
-        const option = { body: "수업 들어가 !" };
-        new Notification("2-5 수업알리미", option);
+        const option = { body: "월요일 시간표로 들어가 " };
+        new Notification("월요일 월요이 월요일", option);
       } else {
         alert('Notification denied');
       }
