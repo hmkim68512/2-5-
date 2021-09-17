@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta HTTP-EQUIV="refresh" CONTENT="30"> 
+    <meta HTTP-EQUIV="refresh" CONTENT="60"> 
     <title>2-5시간표</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@ function notify() {
     Notification.requestPermission(permission => {
       if (permission === "granted") {
         const option = { body: "월요일 시간표로 들어가 " };
-        new Notification("월요일 월요이 월요일", option);
+        new Notification("월요일 월요일 월요일", option);
       } else {
         alert('Notification denied');
       }
@@ -45,7 +45,7 @@ var dd = today.getDate().toString();
 
 var startDate = new Date(yyyy,mm,dd,09,00,0);
 
-var endDate = new Date(yyyy,mm,dd,09,20,0);
+var endDate = new Date(yyyy,mm,dd,09,15,0);
 
 if (today <= endDate && today >= startDate) { notify(); audio.play(); }
 
