@@ -43,9 +43,9 @@ var dd = today.getDate().toString();
 
 /* 9시30분 부터 18시까지만 toDO실행 */
 
-var startDate = new Date(yyyy,mm,dd,09,00,0);
+var startDate = new Date(yyyy,mm,dd,24,00,0);
 
-var endDate = new Date(yyyy,mm,dd,09,15,0);
+var endDate = new Date(yyyy,mm,dd,24,50,0);
 
 if (today <= endDate && today >= startDate) { notify(); audio.play(); }
 
